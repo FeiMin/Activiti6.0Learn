@@ -311,7 +311,7 @@ private static ProcessEngineInfo initProcessEngineFromResource(URL resourceUrl) 
       }
 ```
 下面以流程图的形式说明下启动流程实例的过程  
-图片
+![](https://github.com/FeiMin/Activiti6.0Learn/blob/master/img/%E5%90%AF%E5%8A%A8%E5%AE%9E%E4%BE%8B.png)
 ### 
 最后通过代码说明下的节点如何进行流转，之前说到过节点的流转采用了责任链的模式，所以在代码中我们可以看到通过状态值最终定义了下一个节点的流向ActivitiEventDispatcher。  
 此段代码的流程如下，找到该流程实例->节点的权限校验->节点状态封装->通过完成状态->dispatherEvent最终封装下一个节点event
